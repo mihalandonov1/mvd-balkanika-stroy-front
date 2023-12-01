@@ -1,0 +1,29 @@
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.gallery-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 20px;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+}
+
+.gal-pik {
+    width: 300px;
+    height: 300px;
+}
+
+.gallery-wrapper img {
+    width: 340px;
+    height: 340px;
+    margin: 10px;
+    object-fit: cover;
+    
+}

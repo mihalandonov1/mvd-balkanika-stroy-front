@@ -1,0 +1,171 @@
+@font-face {
+    font-family: Roboto;
+    src: url('../../assets/fonts/Roboto/Roboto-Regular.ttf');
+  
+  }
+  
+  @font-face {
+    font-family: Roboto-bold;
+    src: url('../../assets//fonts//Roboto/Roboto-Bold.ttf');
+  }
+  
+  @font-face {
+    font-family: Roboto-thin;
+    src: url('../../assets//fonts//Roboto/Roboto-Thin.ttf');
+  }
+  
+  @font-face {
+    font-family: nova-square;
+    src: url('../../assets/fonts//Nova_Square/NovaSquare-Regular.ttf');
+  
+  }
+  
+  .future-building {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+  
+    h1 {
+      border-bottom: 3px solid gold;
+      padding-bottom: 0px;
+    }
+  
+    .firstImage {
+      max-width: 400px;
+      margin-bottom: 30px;
+    }
+  
+    .secondImage {
+      width: 400px;
+    }
+  
+    .new-building {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: row;
+      font-size: 14px;
+      width: 100%;
+    }
+  
+    .new-building-header {
+     
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      margin: 30px 0px;
+      margin-right: 20px;
+    }
+  
+    .new-building-text {
+      width: 90%;
+      align-items: center;
+      display: flex;
+    }
+  
+    .project-structure {
+      width: 100%;
+    }
+  
+    .project-description {
+      text-align: initial;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 20px;
+      margin-left: 20px;
+      margin-right: 20px;
+      border: 2px solid greenyellow;
+    }
+  
+    .project-description-box {
+      max-width: 750px;
+    }
+  
+    .project-title {
+      font-family: nova-square;
+      color: gray;
+      font-size: 40px;
+    }
+  
+  
+    .project-description-row {
+     margin-top: 30px;
+     border-top: 1px yellowgreen solid;
+     border-bottom: 1px yellowgreen solid;
+     max-width: 500px;
+     width: 100%;
+    }
+  
+    .project-description-row p {
+      margin: 10px 0px;
+    }
+  
+    .project-description-text p {
+      text-align: start;
+      display: flex;
+     margin: 10px 0px;
+    }
+  
+    .project-description-text {
+      margin: 20px 60px;
+    }
+  
+   
+  
+    .project-buildig-free {
+      
+      color: green;
+      
+    }
+  
+    .project-buildig-sold {
+     
+      color: red;
+      
+    }
+  
+    .gallery {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: 20px;
+  }
+  
+  .gallery-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0px 20px;
+      flex-wrap: wrap;
+      margin: 20px 0px;
+  }
+  
+  .gal-pik {
+      width: 300px;
+      height: 300px;
+  }
+  
+  .gallery-wrapper img {
+      width: 400px;
+      height: 400px;
+      margin: 10px;
+      object-fit: cover;
+      
+  }
+  
+    @media only screen and (max-width: 768px) {
+      .new-building {
+        flex-direction: column;
+      }
+  
+    
+      
+    }
