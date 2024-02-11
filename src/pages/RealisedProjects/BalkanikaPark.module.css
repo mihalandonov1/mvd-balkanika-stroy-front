@@ -36,11 +36,13 @@
   
     .firstImage {
       max-width: 400px;
+      width: 100%;
       margin-bottom: 30px;
     }
   
     .secondImage {
-      width: 400px;
+      max-width: 400px;
+      width: 100%;
     }
   
     .new-building {
@@ -57,8 +59,8 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: space-evenly;
-      margin: 30px 0px;
+      justify-content: space-around;
+      margin: 10px 0px;
       margin-right: 20px;
     }
   
@@ -92,6 +94,8 @@
       font-family: nova-square;
       color: gray;
       font-size: 40px;
+      padding-bottom: 10px;
+      width: 70%;
     }
   
   
@@ -111,6 +115,8 @@
       text-align: start;
       display: flex;
      margin: 10px 0px;
+     font-size: 0.9rem;
+     font-family: Roboto;
     }
   
     .project-description-text {
@@ -140,32 +146,126 @@
   }
   
   .gallery-wrapper {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0px 20px;
-      flex-wrap: wrap;
-      margin: 20px 0px;
-  }
-  
-  .gal-pik {
-      width: 300px;
-      height: 300px;
-  }
-  
-  .gallery-wrapper img {
-      width: 400px;
-      height: 400px;
-      margin: 10px;
-      object-fit: cover;
-      
-  }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 20px;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+}
+
+.gal-pik {
+    width: 300px;
+    height: 300px;
+}
+
+.gallery-wrapper img {
+    width: 340px;
+    height: 340px;
+    margin: 10px;
+    object-fit: cover;
+    
+}
+
   
     @media only screen and (max-width: 768px) {
       .new-building {
         flex-direction: column;
+        width: 100%;
       }
   
+      .project-description {
+        text-align: initial;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid greenyellow;
+        width: 80%;
+        margin: 0px;
+        padding: 10px;
+      }
+
+      .project-description-text {
+        margin: 10px 20px;
+        margin-top: 10px;
+      }
+
+      .firstImage {
+        max-width: 300px;
+        margin-bottom: 20px;
+        margin-top: 30px;
+      }
     
+      .secondImage {
+        max-width: 300px;
+      }
+
+      .new-building-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin: 0px;
+        width: 100%;
+      }
+
+      .gallery-wrapper img {
+        width: 280px;
+        height: 280px;
+        margin: 10px;
+        object-fit: cover;
+    }
+
+    .project-description-text p {
+      text-align: start;
+      display: flex;
+      align-items: center;
+      margin: 10px;
+    }
+
+    .new-building {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      font-size: 14px;
+      
+    }
+    .future-building {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      
+    }
+
+    .project-title {
+      font-family: nova-square;
+      color: gray;
+      font-size: 26px;
+      width: 70%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    
+
+    .gallery-wrapper img {
+      width: 250px;
+      height: 250px;
+      margin: 10px;
+      object-fit: cover;
+      
+  }
+
+  .firstImage {
+    width: 300px;
+    height: 300px;
+  }
       
     }

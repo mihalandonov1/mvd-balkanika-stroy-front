@@ -34,31 +34,67 @@
   }
 
   .firstImage {
+    width: 100%;
     max-width: 440px;
     margin-bottom: 10px;
+    padding-right: 20px;
   }
 
   .secondImage {
-    width: 440px;
+    width: 100%;
+    max-width: 440px;
+    padding-right: 20px;
   }
 
   .new-building {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-direction: row;
     font-size: 14px;
     width: 100%;
   }
 
-  .new-building-header {
-   
+  .project-building-1 {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-buildig-1-wrapper {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    margin: 30px 0px;
-    margin-right: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .project-buildig-2-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .project-buildig-3-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .new-building-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
   }
 
   .new-building-text {
@@ -81,6 +117,7 @@
     margin-left: 20px;
     margin-right: 20px;
     border: 2px solid greenyellow;
+
   }
 
   .project-description-box {
@@ -119,9 +156,10 @@
   table {
     border: 1px solid gray;
     padding: 5px;
-    width: 100%;
+    width: 90%;
     border-collapse: collapse;
     font-size: 18px;
+    margin-bottom: 20px;
   }
 
    thead td {
@@ -176,8 +214,30 @@
     height: 400px;
     margin: 10px;
     object-fit: cover;
-    
+
 }
+
+.b1et1 img {
+  background-color: red;
+  width: 300px;
+  height: 300px;
+}
+
+.showButton {
+  max-width: 210px;
+  background-color: rgb(226, 28, 71, 0.7);
+  transition: .4s;
+  color: white;
+  border-radius: 30px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  margin-bottom: 20px;
+}
+
 
   @media only screen and (max-width: 768px) {
     .new-building {
@@ -186,10 +246,101 @@
 
     table {
       border: 1px solid gray;
-      padding: 5px;
-      width: 100%;
+      width: 90%;
       border-collapse: collapse;
       font-size: 10px;
     }
+
+    .firstImage {
+      max-width: 300px;
+      margin-bottom: 10px;
+    }
+  
+    .secondImage {
+      max-width: 300px;
+    }
+
+    .gallery-wrapper img {
+      width: 280px;
+      height: 280px;
+      margin: 10px;
+      object-fit: cover;
+  }
+
+  
+
+  table tr td {
+    border: 1px solid gray;
+    padding: 0px;
+    font-size: 6px;
+  }
+
+   thead td {
+    border: 1px solid gray;
+    background-color: goldenrod;
+    font-size: 6px;
+    padding: 1px;
+  }
+
+  .project-description {
+    text-align: initial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid greenyellow;
+    width: 80%;
+    margin: 0px;
+    padding: 10px;
+  }
+
+  .project-structure {
+    width: 90%;
+    margin-top: 10px;
+  }
+
+  .new-building-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .project-description-text {
+    margin: 10px 20px;
+    font-family: Roboto;
+
+  }
+
+  h2 {
+    font-size: 16px;
+    margin: 5px;
+  }
+
+  h4 {
+    font-size: 12px;
+    margin: 5px;
+  }
+
+  .project-buildig-1-wrapper {
     
+    margin-top: 10px;
+  }
+
+  .showButton {
+    max-width: 210px;
+    background-color: rgb(226, 28, 71, 0.7);
+    transition: .4s;
+    color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 8px;
+  }
+  
   }

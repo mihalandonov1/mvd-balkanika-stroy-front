@@ -16,18 +16,45 @@
 
 .phone-icon {
     font-size: 40px;
-    color: red;
+    color: rgb(226, 28, 71);
     z-index: 11111;
     border-radius: 5px;
-  
 }
 
 .phone-text {
-    color: red;
+    color: rgb(226, 28, 71);
     font-weight: bold;
     text-decoration: none;
 }
 
 @media only screen and (max-width: 768px) {
+    .phone-component {
+        position: fixed;
+        color: white;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        cursor: pointer;
+        text-decoration: none;
+        z-index: 11;
+    }
 
+    .phone-icon {
+        font-size: 20px;
+        color: rgb(226, 28, 71);
+        z-index: 11111;
+        border-radius: 5px;
+    }
+
+    .phone-text {
+        color: rgb(226, 28, 71);
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 10px;
+    }
 }

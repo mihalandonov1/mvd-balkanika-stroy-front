@@ -27,7 +27,7 @@ const RealisedProjects = () => {
         
         <h1 className={styles['project-title']}>Monolith House</h1>
         <div className={styles['new-building']}>
-            <div>
+            
                 <div className={styles['project-description']}>
                     <div className={styles['project-description-row']}>
                         <p style={{fontFamily: 'Roboto-bold'}}>Проект:</p>
@@ -42,12 +42,16 @@ const RealisedProjects = () => {
                         <p style={{fontFamily: 'Roboto-thin'}}>255кв м.</p>
                     </div>
                     <div className={styles['project-description-row']}>
-                        <p style={{fontFamily: 'Roboto-bold'}}>Етажи</p>
+                        <p style={{fontFamily: 'Roboto-bold'}}>Етажи:</p>
                         <p style={{fontFamily: 'Roboto-thin'}}>2</p>
+                    </div>
+                    <div className={styles['project-description-row']}>
+                        <p style={{fontFamily: 'Roboto-bold'}}>Информация:</p>
+                        <p style={{fontFamily: 'Roboto-thin'}}>Къщата е монолитна с естествен камък, залепена до борова гора с уникална панорама към Средна Гора. Има 3 спални, от които едната е мастър бедрум и хол с размери 50кв.м.</p>
                     </div>
                     
                 </div>
-            </div>
+         
             <div className={styles['new-building-header']}>
                 <img className={styles['firstImage']} src={firstImage} alt='pic'/>
             </div>  

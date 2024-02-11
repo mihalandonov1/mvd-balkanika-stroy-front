@@ -22,34 +22,34 @@ const BallkanikaPark = () => {
         <Navbar/>
         <h1 className={styles['project-title']}>Balkanika Park</h1>
         <div className={styles['new-building']}>
-            <div>
+         
                 <div className={styles['project-description']}>
                     <div className={styles['project-description-row']}>
                         <p style={{fontFamily: 'Roboto-bold'}}>Проект:</p>
-                        <p style={{fontFamily: 'Roboto-thin'}}>Жилищна сграда с гаражи, офиси и детска площадка тип затворен комплекс с контролиран достъп и зона за отдих.</p>
+                        <p style={{fontFamily: 'Roboto-thin'}}>Жилищна сграда на 4 етажа с гаражи и паркоместа намираща се в близоост до Аязмото</p>
                     </div>
                     <div className={styles['project-description-row']}>
                         <p style={{fontFamily: 'Roboto-bold'}}>Местоположение:</p>
-                        <p style={{fontFamily: 'Roboto-thin'}}>гр. Стара Загора зад Кауфланд, в зоната на Техникумите</p>
+                        <p style={{fontFamily: 'Roboto-thin'}}>гр. Стара Загора, район Аязмоото</p>
                     </div>
                     <div className={styles['project-description-row']}>
                         <p style={{fontFamily: 'Roboto-bold'}}>Апартаменти:</p>
-                        <p style={{fontFamily: 'Roboto-thin'}}>26 бр.</p>
+                        <p style={{fontFamily: 'Roboto-thin'}}>10 бр.</p>
                     </div>
                     <div className={styles['project-description-row']}>
-                        <p style={{fontFamily: 'Roboto-bold'}}>Офиси:</p>
+                        <p style={{fontFamily: 'Roboto-bold'}}>Гаражи:</p>
                         <p style={{fontFamily: 'Roboto-thin'}}>2 бр.</p>
                     </div>
                     <div className={styles['project-description-row']}>
-                        <p style={{fontFamily: 'Roboto-bold'}}>Гаражи и паркоместа:</p>
-                        <p style={{fontFamily: 'Roboto-thin'}}>10 гаражи и 18 паркоместа</p>
+                        <p style={{fontFamily: 'Roboto-bold'}}>Паркоместа:</p>
+                        <p style={{fontFamily: 'Roboto-thin'}}>8 бр.</p>
                     </div>
                     <div className={styles['project-description-row']}>
                         <p style={{fontFamily: 'Roboto-bold'}}>Развлечения и удобства:</p>
-                        <p style={{fontFamily: 'Roboto-thin'}}>В двора на комплекса са предвидени, тревни площи детска площадка, място за отдих и зелени площи.</p>
+                        <p style={{fontFamily: 'Roboto-thin'}}>На изключително комуникативно място до парк Аязмото. В близост се намират магазини, аптеки, детска градина и училища. На 10 мин до центъра и в същото време на тихо и спокойно място. Топ локация в непосредствена близост до пешеходната алея на Аязмото</p>
                     </div>
                 </div>
-            </div>
+          
 
             <div className={styles['new-building-header']}>
                 <img className={styles['firstImage']} src={firstImage} alt='pic'/>
@@ -58,13 +58,16 @@ const BallkanikaPark = () => {
 
         </div>
         <div className={styles['project-description-text']}>
+
             <h2 style={{fontFamily: 'Roboto-bold'}}>Балканика Строй представя жилищен комплекс, хармонично вписан в средата, в която е разположен – гората и града.</h2>
+
             <div className={styles['project-description-box']}>
-            <p>Kомплексa се отличава със стил, качество и отговаря на най-високите стандарти в строителството.</p>
-            <p>Жилищата са просторни, носят усещане за удобство и топлина на бъдещите обитатели на сградата. Френските прозорци засилват усещането за живот сред природата, осигурявайки много естествена светлина и гледки.</p>
-            <p>Намира се в близост до кафенета, фитнеси, аптеки, училища, детски градини, супермаркети, автобусни спирки, улеснявайки предвижването до всяка точка на града. В близост до известното езеро "Загорка"</p>
-            <p>Живот сред природата в сърцето на града!</p>
+                <p>Kомплексa се отличава със стил, качество и отговаря на най-високите стандарти в строителството.</p>
+                <p>Жилищата са просторни, носят усещане за удобство и топлина на бъдещите обитатели на сградата. Френските прозорци засилват усещането за живот сред природата, осигурявайки много естествена светлина и гледки.</p>
+                <p>Намира се в близост до кафенета, фитнеси, аптеки, училища, детски градини, супермаркети, автобусни спирки, улеснявайки предвижването до всяка точка на града. В близост до известното езеро "Загорка"</p>
+                <p>Живот сред природата в сърцето на града!</p>
             </div>
+            
         </div>
 
         <div className={styles['gallery']}>

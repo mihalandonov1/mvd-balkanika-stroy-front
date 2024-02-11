@@ -22,6 +22,10 @@
 
 .navigation {
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 
@@ -29,23 +33,28 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  background-color: rgb(51, 51, 51, 0.9);
+  width: 80%;
+  height: 100%;
   flex-direction: row;
 }
 
 .navi {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 100px;
+  height: 100%;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 10px;
 }
+ 
 
 .nav-bar {
   display: flex;
   align-items: center;
-
+  
+  width: 100%;
+  height: 100%;
 }
 
 .header {
@@ -63,16 +72,30 @@
   display: flex;
   justify-content: flex-end;
   gap: 20px;
-  margin-right: 20px;
+  margin-right: 10px;
   list-style: none;
   width: 100%;
+  height: 100%;
 }
 
 .menu-links {
   text-decoration: none;
-  color: gold;
-  font-family: Roboto;
+  color: goldenrod;
+  font-family: Roboto-bold;
+  font-weight: bold;
+  margin-right: 10px;
+  width: 100%;
+  display: flex;
+  transition: 0.2s;
+  border-bottom: #e1a427 solid 1px;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
 } 
+
+.menu-links:hover {
+  transform: scale(1.1);
+}
 
 .hamburger {
   display: none;
@@ -85,64 +108,46 @@
   color: white;
   font-size: 20px;
   display: flex;
-  width: 100%;
+  width: 80%;
   flex-direction: row;
-  border-top: solid #e1a427;
+  border-top: solid goldenrod;
   justify-content: space-around;
-  background-color: rgb(51, 51, 51, 0.9);
+ 
+  padding: 10px;
 }
 
-.company-name-text { 
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 20px 0px;
-  font-family: Roboto-bold;
-  font-size: 30px;
-  letter-spacing: 3px;
-  color: gold;
-  margin-left: 20px;
+.company-contact {
+  color: goldenrod;
 }
 
 .company-name-tel {
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-end;
+  justify-content: flex-end;
+  text-decoration: none;
 }
 
 .company-tel {
   margin-right: 20px;
   font-size: 20px;
   font-family: Roboto-bold;
-  text-align: left;
+  text-align: right;
   display: flex;
+  justify-content: flex-end;
 }
 
 .company-tel-link {
   font-family: Roboto-bold;
-  color: gold;
+  color: goldenrod;
   text-decoration: none;
   display: flex;
   margin-left: 20px;
 }
 
-.social-icons {
-  display: flex;
-  align-items: center;
-  width: 50px;
-  justify-content: space-between;
-  font-size: 20px;
-  margin-right: 20px;
-  gap: 10px;
-}
 
 
 @media only screen and (max-width: 768px) {
-
-
-
-  
 
   .hamburger {
     display: flex;
@@ -162,10 +167,12 @@
     align-items: center;
     justify-content: flex-start;
     padding-top: 50px;
-    gap: 80px;
+    gap: 60px;
     transition: 0.5s;
     z-index: 1111111;
     padding: 0px;
+    font-size: 30px;
+    font-weight: bold;
   }
 
   .menu.active {
@@ -178,40 +185,18 @@
   .nav {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
   .navi {
-    margin: 10px 0px;
-  }
-
- 
-  .social-icons {
-    margin-right: 10px;
-  }
-
-  .company-name {
-    color: white;
-    font-size: 10px;
-    display: flex;
     width: 100%;
-    flex-direction: row;
-    border-top: solid #e1a427;
-    justify-content: space-around;
-    margin-left: 0px;
-    background-color: rgb(51, 51, 51, 0.9);
   }
-  
-  .company-name-text { 
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 20px 0px;
-    font-family: Roboto-bold;
-    font-size: 0.7rem;
-    letter-spacing: 3px;
-    color: gold;
-    margin-left: 10px;
-  }
+
+
+
+
+
+
   
   .company-name-tel {
     width: 100%;
@@ -221,11 +206,24 @@
   }
   
   .company-tel {
-    margin-right: 20px;
-    font-size: 0.8rem;
+    
+    font-size: 0.7rem;
     font-family: Roboto-bold;
     text-align: left;
-    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 10px 0px;
+  }
+
+  .company-tel-link {
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin-right: 10px;
+   
   }
 
   .logo {
@@ -235,9 +233,11 @@
     padding: 0px 0px;
     width: 50px;
   }
+
+ 
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+/* @media only screen and (min-width: 768px) and (max-width: 1024px) {
  .company-tel {
   font-size: 0.9rem;
  }
@@ -245,4 +245,26 @@
  .company-name-text {
   font-size: 18px;
  }
+
+ .nav {
+  width: 100%;
+ }
+
+ .navi {
+  width: 100px;
+ }
+
+ .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 0px;
+
 }
+
+.menu-links {
+  width: 100%;
+}
+
+ 
+} */

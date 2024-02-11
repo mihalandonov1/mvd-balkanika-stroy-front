@@ -89,8 +89,9 @@
   
     .project-title {
       font-family: nova-square;
-      
+      padding-bottom: 10px;
       font-size: 40px;
+      width: 70%;
     }
   
   
@@ -113,7 +114,9 @@
     }
   
     .project-description-text {
-      margin: 20px 60px;
+      margin: 10px 60px;
+      font-family: Roboto;
+      font-size: 0.9rem;
     }
 
     .gallery {
@@ -134,8 +137,8 @@
     }
     
     .gal-pik {
-        width: 300px;
-        height: 300px;
+        max-width: 340px;
+        max-height: 340px;
     }
     
     .gallery-wrapper img {
@@ -147,7 +150,50 @@
     }
 
     @media only screen and (max-width: 768px) {
-        .new-building {
-          flex-direction: column;
-        }
+      .new-building {
+        flex-direction: column;
+      }
+
+        .gallery-wrapper img {
+          width: 250px;
+          height: 250px;
+          margin: 10px;
+          object-fit: cover;
+          
+      }
+
+      .firstImage {
+        max-width: 300px;
+        max-height: 300px;
+        padding-left: 18px;
+      }
+
+      .project-description-text {
+        margin: 10px 20px;
+        font-family: Roboto;
+      }
+
+      .project-description {
+        text-align: initial;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid greenyellow;
+        width: 80%;
+        margin: 0px;
+        padding: 10px;
+      }
+
+      .project-title {
+        font-family: nova-square;
+        color: gray;
+        font-size: 26px;
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+
     }
